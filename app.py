@@ -28,7 +28,7 @@ def toss_coin(n):
     - n (int): Número de intentos.
 
     Returns:
-    - float: Media de las probabilidades.
+    - float: Media de las probabilidades calculadas.
     """
     trial_outcomes = scipy.stats.bernoulli.rvs(p=0.5, size=n)
     mean = None
