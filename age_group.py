@@ -9,7 +9,7 @@ def get_age_group(age):
         return 'infancia'
 
     if 15 <= age <= 24:
-        return 'juventud'
+        return 'juventud' #young
 
     if 25 <= age <= 64:
         return 'adulto'
