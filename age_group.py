@@ -1,15 +1,14 @@
 def get_age_group(age):
- 
     """
     Devuelve el grupo de edad basado en la edad en años dentro del intervalo 0..150
     de lo contrario, devuelve 'desconocido'.
     """
-    
+
     if 0 <= age <= 14:
         return 'infancia'
 
     if 15 <= age <= 24:
-        return 'juventud' #young
+        return 'juventud'  # young
 
     if 25 <= age <= 64:
         return 'adulto'
@@ -19,11 +18,10 @@ def get_age_group(age):
 
     if (age < 0 or age > 100):
         return 'desconocido'
- 
+
+
 def test_get_age_group():
- 
     """prueba unitaria para get_age_group"""
- 
     assert get_age_group(-1) == 'desconocido'
     assert get_age_group(0) == 'infancia'
     assert get_age_group(14) == 'infancia'
